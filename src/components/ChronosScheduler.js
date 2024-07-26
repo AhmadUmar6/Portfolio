@@ -28,7 +28,7 @@ const ChronosScheduler = () => {
         </p>
         <p>
           The impact of Chronos was immediate and substantial. Within the first three days of its launch, the app garnered over 1,000 site visits from my university alone, demonstrating its value and filling a critical need in our academic community.
-          In the coming day I plan to implement a schedule sync functionality, allowing students to effortlessly add their course schedules to their device's calendar app with just one click. 
+          In the coming days I plan to implement a schedule sync functionality, allowing students to effortlessly add their course schedules to their device's calendar app with just one click. 
         </p>
       </div>
       <hr className="separator" />
