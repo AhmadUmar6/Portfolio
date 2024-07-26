@@ -1,147 +1,137 @@
 body {
-    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldfinder-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldfinder-container .image-tile {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fieldfinder-container .image-tile:hover {
+  transform: scale(1.02);
+}
+
+.fieldfinder-container .tile-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+}
+
+.fieldfinder-container .content-section {
+  margin-top: 20px;
+}
+
+.fieldfinder-container h1 {
+  font-size: 1.5rem;
+  color: #1D1D1F;
+}
+
+.fieldfinder-container h2 {
+  font-size: 1rem;
+  color: #A0A5AB;
+  margin-bottom: 10px;
+}
+
+.fieldfinder-container p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.fieldfinder-container .separator {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+.fieldfinder-container .github-link {
+  color: #1D1D1F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.fieldfinder-container .github-link:hover {
+  color: #A0A5AB;
+}
+
+.fieldfinder-container .stack-github {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.fieldfinder-container .stack,
+.fieldfinder-container .github {
+  flex: 1;
+}
+
+.fieldfinder-container .stack p,
+.fieldfinder-container .github p {
+  margin-top: 0;
+}
+
+.fieldfinder-container > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .fieldfinder-container .tile-image {
+    max-width: 100%;
   }
-  
-  .fieldfinder-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  .fieldfinder-container h1 {
+    font-size: 2.5rem;
   }
-  
-  .image-tile {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+  .fieldfinder-container h2 {
+    font-size: 1.8rem;
   }
-  
-  .image-tile:hover {
-    transform: scale(1.02);
-  }
-  
-  .tile-image {
-    width: 100%;
-    height: auto;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .content-section {
-    margin-top: 20px;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-    color: #1D1D1F;
-  }
-  
-  h2 {
+  .fieldfinder-container p {
     font-size: 1rem;
-    color: #A0A5AB;
-    margin-bottom: 10px;
   }
-  
-  p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .fieldfinder-container {
+    padding: 10px;
   }
-  
-  .separator {
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #ddd;
+  .fieldfinder-container .tile-image {
+    max-width: 100%;
   }
-  
-  .github-link {
-    color: #1D1D1F;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  .fieldfinder-container h1 {
+    font-size: 1.5rem;
   }
-  
-  .github-link:hover {
-    color: #A0A5AB;
+  .fieldfinder-container h2 {
+    font-size: 1rem;
   }
-  
-  .stack-github {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 20px;
+  .fieldfinder-container p {
+    font-size: 0.8rem;
   }
-  
-  .stack, .github {
-    flex: 1;
+  .fieldfinder-container .separator {
+    width: 90%;
   }
-  
-  .stack p, .github p {
-    margin-top: 0;
+  .fieldfinder-container .stack-github {
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  /* Ensure the last section touches the footer */
-  .fieldfinder-container > :last-child {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .tile-image {
-      max-width: 100%;
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    h2 {
-      font-size: 1.8rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .fieldfinder-container {
-      padding: 10px;
-    }
-  
-    .tile-image {
-      max-width: 100%;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    h2 {
-      font-size: 1rem;
-    }
-  
-    p {
-      font-size: 0.8rem;
-    }
-  
-    .separator {
-      width: 90%;
-    }
-  
-    .stack-github {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-  
+}

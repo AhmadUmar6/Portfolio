@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import About from './components/About';
-import Resume from './components/Resume';
 import FieldFinder from './components/FieldFinder';
 import ChronosScheduler from './components/ChronosScheduler';
 import DreamTeam from './components/DreamTeam';
@@ -22,7 +21,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/about" element={<About />} />
-              <Route path="/resume" element={<Resume />} />
               <Route path="/projects/fieldfinder" element={<FieldFinder />} />
               <Route path="/projects/chronos-scheduler" element={<ChronosScheduler />} />
               <Route path="/projects/dreamteam" element={<DreamTeam />} />
