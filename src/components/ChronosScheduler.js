@@ -20,7 +20,9 @@ const ChronosScheduler = () => {
         <img src={images[currentImageIndex]} alt="Chronos App" className="tile-image" />
       </div>
       <div className="content-section">
-        <h1>Chronos App</h1>
+        <h1>
+          <a href="https://chronos-lums.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link">Chronos App</a>
+        </h1>
         <h2>Course Scheduler</h2>
         <p>
           Every semester, as enrollment approaches, a palpable atmosphere of anxiety descends upon the student body. The lack of up-to-date and user-friendly tools for course planning often leaves students struggling to organize their academic schedules effectively.
@@ -33,7 +35,7 @@ const ChronosScheduler = () => {
       </div>
       <hr className="separator" />
       <div className="content-section">
-      <div className="stack-github">
+        <div className="stack-github">
           <div className="stack">
             <h2>Stack</h2>
             <p>Next.js, Tailwind.css, MongoDB, Express.js, React.js, Node.js</p>

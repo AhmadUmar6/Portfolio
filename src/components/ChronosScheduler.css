@@ -24,7 +24,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.chronos-container .github-link {
+.chronos-container .github-link, .chronos-container .chronos-link {
   color: #1D1D1F;
   text-decoration: none;
   font-weight: 500;
@@ -79,6 +79,10 @@ body {
 .chronos-container > :last-child {
   margin-bottom: 0;
   padding-bottom: 20px;
+}
+
+.chronos-container .github-link:hover, .chronos-container .chronos-link:hover {
+  color: #A0A5AB;
 }
 
 @media (max-width: 992px) {

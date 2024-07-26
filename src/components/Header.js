@@ -19,7 +19,8 @@ const Header = () => {
           </Navbar.Brand>
           <Nav className="primary-nav">
             <Nav.Link as={Link} to="/about" className="primary-text">About</Nav.Link>
-            <Nav.Link href ="/Resume.pdf" className="primary-text">CV</Nav.Link>
+            <Nav.Link href="/Resume.pdf" className="primary-text">CV</Nav.Link>
+            <Nav.Link href="https://github.com/AhmadUmar6" className="primary-text">GitHub</Nav.Link>
           </Nav>
         </div>
       </div>
