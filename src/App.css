@@ -17,6 +17,23 @@ body {
   z-index: 1;
 }
 
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 320ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 320ms ease-in;
+}
 
 @media (max-width: 992px) {
   .content-wrapper {

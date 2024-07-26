@@ -24,7 +24,7 @@ const About = () => {
             </div>
           </div>
           <div className="timeline-item">
-            <div className="date">May 2021</div>
+            <div className="date">August 18 - May 21</div>
             <div className="content">
               <h3>Aitchison College</h3>
               <p>A-Level: 2A* 1A – SAT: 1520</p>
