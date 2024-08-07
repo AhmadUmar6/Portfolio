@@ -11,6 +11,7 @@ import About from './components/About';
 import FieldFinder from './components/FieldFinder';
 import ChronosScheduler from './components/ChronosScheduler';
 import DreamTeam from './components/DreamTeam';
+import PantryApp from './components/PantryApp';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const AnimatedRoutes = () => {
           <Route path="/projects/fieldfinder" element={<FieldFinder />} />
           <Route path="/projects/chronos-scheduler" element={<ChronosScheduler />} />
           <Route path="/projects/dreamteam" element={<DreamTeam />} />
+          <Route path="/projects/pantry-app" element={<PantryApp />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>

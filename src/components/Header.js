@@ -32,6 +32,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/projects/fieldfinder" className="secondary-text">FieldFinder</Nav.Link>
           <Nav.Link as={Link} to="/projects/chronos-scheduler" className="secondary-text">Chronos Scheduler</Nav.Link>
           <Nav.Link as={Link} to="/projects/dreamteam" className="secondary-text">DreamTeam</Nav.Link>
+          <Nav.Link as={Link} to="/projects/pantry-app" className="secondary-text">Pantry App</Nav.Link>
         </div>
       </div>
       <div className="header-section contact-section">

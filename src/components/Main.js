@@ -26,6 +26,13 @@ const Main = () => {
       date: "July 2023",
       media: ["C1.png", "C2.png", "C3.png"],
       link: "/projects/chronos-scheduler"
+    },
+    {
+      title: "Pantry App",
+      subtitle: "Inventory Management System and AI Recipe Suggestions",
+      date: "August 2024",
+      media: ["P4.png", "P3.png", "P2.png", "P1.png"],
+      link: "/projects/pantry-app"
     }
   ];
 

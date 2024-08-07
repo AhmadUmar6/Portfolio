@@ -1,0 +1,149 @@
+/* src/components/PantryApp.css */
+body {
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pantryapp-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pantryapp-container .image-tile {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pantryapp-container .image-tile:hover {
+    transform: scale(1.02);
+  }
+  
+  .pantryapp-container .tile-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .pantryapp-container .content-section {
+    margin-top: 20px;
+  }
+  
+  .pantryapp-container h1 {
+    font-size: 1.5rem;
+    color: #1D1D1F;
+  }
+  
+  .pantryapp-container h2 {
+    font-size: 1rem;
+    color: #A0A5AB;
+    margin-bottom: 10px;
+  }
+  
+  .pantryapp-container p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .pantryapp-container .separator {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+  }
+  
+  .pantryapp-container .github-link {
+    color: #1D1D1F;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .pantryapp-container .github-link:hover {
+    color: #A0A5AB;
+  }
+  
+  .pantryapp-container .stack-github {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .pantryapp-container .stack,
+  .pantryapp-container .github {
+    flex: 1;
+  }
+
+  .pantry-link {
+    color: #1D1D1F;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .pantry-link:hover {
+    color: #A0A5AB;
+  }
+  
+  .pantryapp-container .stack p,
+  .pantryapp-container .github p {
+    margin-top: 0;
+  }
+  
+  .pantryapp-container > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .pantryapp-container .tile-image {
+      max-width: 100%;
+    }
+    .pantryapp-container h1 {
+      font-size: 2.5rem;
+    }
+    .pantryapp-container h2 {
+      font-size: 1.8rem;
+    }
+    .pantryapp-container p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pantryapp-container {
+      padding: 10px;
+    }
+    .pantryapp-container .tile-image {
+      max-width: 100%;
+    }
+    .pantryapp-container h1 {
+      font-size: 1.5rem;
+    }
+    .pantryapp-container h2 {
+      font-size: 1rem;
+    }
+    .pantryapp-container p {
+      font-size: 0.8rem;
+    }
+    .pantryapp-container .separator {
+      width: 90%;
+    }
+    .pantryapp-container .stack-github {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
