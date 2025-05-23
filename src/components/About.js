@@ -17,7 +17,7 @@ const About = () => {
         <h2>Education</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="date">Aug 21 - Present</div>
+            <div className="date">Aug 21 - May 25</div>
             <div className="content">
               <h3>Lahore University of Management Sciences</h3>
               <p>BSc Computer Science</p>
@@ -37,14 +37,21 @@ const About = () => {
         <h2>Experience</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="date">Jul 24 - Present</div>
+            <div className="date">May 25 - Present</div>
+            <div className="content">
+              <h3>BigUp</h3>
+              <p>Automation Engineer</p>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="date">Jul 24 - Aug 24</div>
             <div className="content">
               <h3>PepsiCo Pakistan</h3>
               <p>Sales and IT Intern</p>
             </div>
           </div>
           <div className="timeline-item">
-            <div className="date">Jul 24 - Present</div>
+            <div className="date">Jul 24 - Sep 24</div>
             <div className="content">
               <h3>Headstarter AI</h3>
               <p>Software Engineering Fellow</p>

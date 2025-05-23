@@ -4,32 +4,30 @@ import './Tile.css';
 
 const Tile = ({ title, subtitle, date, media, link }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     if (Array.isArray(media) && media.length > 1) {
       const interval = setInterval(() => {
-        setIsAnimating(true);
-        setTimeout(() => {
-          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % media.length);
-          setIsAnimating(false);
-        }, 1500);
-      }, 5000 + Math.random() * 2000); // Random interval between 5-7 seconds
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % media.length);
+      }, 9000 + Math.random() * 2000); // Random interval between 5-7 seconds
 
       return () => clearInterval(interval);
     }
   }, [media]);
 
-  const currentImage = Array.isArray(media) ? media[currentImageIndex] : media;
+  const currentImageSrc = Array.isArray(media) && media.length > 0
+    ? media[currentImageIndex]
+    : (typeof media === 'string' ? media : '/default-placeholder.png');
 
   return (
     <div className="tile-container">
       <Link to={link}>
         <div className="tile">
-          <img 
-            src={currentImage} 
-            alt={title} 
-            className={`tile-media ${isAnimating ? 'animating' : ''}`} 
+          <img
+            key={currentImageSrc} // This key is important to re-trigger the animation
+            src={currentImageSrc}
+            alt={title}
+            className="tile-media"
           />
         </div>
       </Link>

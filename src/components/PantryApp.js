@@ -21,7 +21,7 @@ const PantryApp = () => {
         <img src={images[currentImageIndex]} alt="Pantry App" className="tile-image" />
       </div>
       <div className="content-section">
-        <a href="https://pantry-app-ruddy.vercel.app/login" target="_blank" rel="noopener noreferrer" className="pantry-link">Pantry App</a>
+        <a href="https://pantry-app-ruddy.vercel.app/login" target="_blank" rel="noopener noreferrer" className="pantry-link">Try Pantry App!</a>
         <h2>Inventory Management System and AI Recipe Suggestions</h2>
         <p>
           This project focuses on managing pantry inventory and providing smart, AI-driven recipe suggestions based on available ingredients. It features Firebase for authentication and database handling, a light and dark mode toggle, and utilizes the GroqCloud API for generating healthy recipes.

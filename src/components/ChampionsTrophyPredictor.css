@@ -1,0 +1,124 @@
+/* src/components/projects/ChampionsTrophyPredictor.css */
+body {
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .championstrophypredictor-container { /* Updated class name */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .championstrophypredictor-container .image-tile { /* Updated class name */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .championstrophypredictor-container .image-tile:hover { /* Updated class name */
+    transform: scale(1.02);
+  }
+  
+  .championstrophypredictor-container .tile-image { /* Updated class name */
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .championstrophypredictor-container .content-section { /* Updated class name */
+    margin-top: 20px;
+  }
+  
+  .championstrophypredictor-container h1 { /* Updated class name */
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .championstrophypredictor-container h2 { /* Updated class name */
+    font-size: 1rem;
+    color: #A0A5AB;
+    margin-bottom: 10px;
+  }
+  
+  .championstrophypredictor-container p { /* Updated class name */
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .championstrophypredictor-container ol { /* Updated class name */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    padding-left: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .championstrophypredictor-container .separator { /* Updated class name */
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+  }
+  
+  .championstrophypredictor-container .stack { /* Updated class name */
+    text-align: left;
+  }
+  
+  .championstrophypredictor-container .stack p { /* Updated class name */
+    margin-top: 0;
+  }
+  
+  .championstrophypredictor-container > :last-child { /* Updated class name */
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .championstrophypredictor-container .tile-image { /* Updated class name */
+      max-width: 100%;
+    }
+    .championstrophypredictor-container h1 { /* Updated class name */
+      font-size: 2.5rem;
+      color: black;
+    }
+    .championstrophypredictor-container h2 { /* Updated class name */
+      font-size: 1.8rem;
+    }
+    .championstrophypredictor-container p, /* Updated class name */
+    .championstrophypredictor-container ol { /* Updated class name */
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .championstrophypredictor-container { /* Updated class name */
+      padding: 10px;
+    }
+    .championstrophypredictor-container .tile-image { /* Updated class name */
+      max-width: 100%;
+    }
+    .championstrophypredictor-container h1 { /* Updated class name */
+      font-size: 1.5rem;
+      columns: black;
+    }
+    .championstrophypredictor-container h2 { /* Updated class name */
+      font-size: 1rem;
+    }
+    .championstrophypredictor-container p, /* Updated class name */
+    .championstrophypredictor-container ol { /* Updated class name */
+      font-size: 0.8rem;
+    }
+    .championstrophypredictor-container .separator { /* Updated class name */
+      width: 90%;
+    }
+  }

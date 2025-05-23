@@ -21,7 +21,7 @@ const ChronosScheduler = () => {
       </div>
       <div className="content-section">
         <h1>
-          <a href="https://chronos-lums.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link">Chronos App</a>
+          <a href="https://chronos-lums.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link"> Try Chronos App!</a>
         </h1>
         <h2>Course Scheduler</h2>
         <p>

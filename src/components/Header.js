@@ -33,6 +33,10 @@ const Header = () => {
           <Nav.Link as={Link} to="/projects/chronos-scheduler" className="secondary-text">Chronos Scheduler</Nav.Link>
           <Nav.Link as={Link} to="/projects/dreamteam" className="secondary-text">DreamTeam</Nav.Link>
           <Nav.Link as={Link} to="/projects/pantry-app" className="secondary-text">Pantry App</Nav.Link>
+          <Nav.Link as={Link} to="/projects/ChampionsTrophyPredictor" className="secondary-text">Champions Trophy Predictor</Nav.Link>
+          <Nav.Link as={Link} to="/projects/serenity-now" className="secondary-text">Serenity Now</Nav.Link>
+          <Nav.Link as={Link} to="/projects/CMTAdvocates" className="secondary-text">CMT Advocates</Nav.Link>
+          <Nav.Link as={Link} to="/projects/eclat-ecommerce" className="secondary-text">ÉCLAT</Nav.Link>
         </div>
       </div>
       <div className="header-section contact-section">

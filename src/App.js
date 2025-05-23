@@ -12,6 +12,10 @@ import FieldFinder from './components/FieldFinder';
 import ChronosScheduler from './components/ChronosScheduler';
 import DreamTeam from './components/DreamTeam';
 import PantryApp from './components/PantryApp';
+import ChampionsTrophyPredictor from './components/ChampionsTrophyPredictor';
+import SerenityNow from './components/SerenityNow';
+import CMTAdvocates from './components/CMTAdvocates';
+import Eclat from './components/Eclat';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -26,6 +30,10 @@ const AnimatedRoutes = () => {
           <Route path="/projects/chronos-scheduler" element={<ChronosScheduler />} />
           <Route path="/projects/dreamteam" element={<DreamTeam />} />
           <Route path="/projects/pantry-app" element={<PantryApp />} />
+          <Route path="/projects/ChampionsTrophyPredictor" element={<ChampionsTrophyPredictor />} />
+          <Route path="/projects/serenity-now" element={<SerenityNow />} />
+          <Route path="/projects/CMTAdvocates" element={<CMTAdvocates />} />
+          <Route path="/projects/eclat-ecommerce" element={<Eclat />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
