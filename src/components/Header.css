@@ -15,8 +15,9 @@ body {
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  border-right: 0.9px solid rgba(0,0,0,.3);
+  border-right: 1.5px solid #000;
   padding: 10px 30px;
+  overflow-y: auto; /* ADDED: Allows vertical scrolling for the sidebar if content overflows */
 }
 
 .header-content {
@@ -79,8 +80,8 @@ body {
   bottom: 0;
   left: -30px;
   right: -30px;
-  height: 0.5px;
-  background-color: rgba(0,0,0,.3);
+  height: 1.5px;
+  background-color: #000;
 }
 
 .secondary-links {
@@ -95,7 +96,7 @@ body {
 }
 
 .secondary-links:not(.hidden) {
-  max-height: 200px;
+  max-height: 500px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -111,11 +112,12 @@ body {
     width: 100%;
     height: 80px;
     border-right: none;
-    border-bottom: 0.9px solid rgba(0,0,0,.3);
+    border-bottom: 1.5px solid #000;
     flex-direction: row;
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
+    overflow-y: hidden; /* Explicitly hide vertical scrollbar for top nav */
   }
   
   .header-content {

@@ -3,12 +3,14 @@ body {
 }
 
 .main-content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .header-text {
   text-align: center;
-  padding: 20px 0;
+  padding: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px
 }
 
 .header-text sup {
@@ -35,11 +37,11 @@ body {
 }
 
 .header-text2 {
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   font-weight: 700;
   margin: 30px 0;
-  background: linear-gradient(110deg, #9e9e9e 1%, #1D1D1F 85%);
+  background: linear-gradient(900deg, #9e9e9e 1%, #1D1D1F 85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -50,15 +52,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
-  padding: 30px;
+  margin: 10px auto;
+  padding: 0px;
   max-width: 600px;
   position: relative;
 }
 
 .star-icon {
   font-size: 4rem;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   background: linear-gradient(110deg, #9e9e9e 1%, #1D1D1F 85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,7 +71,7 @@ body {
 .japanese-text {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   text-align: center;
   background: linear-gradient(110deg, #9e9e9e 1%, #1D1D1F 85%);
   -webkit-background-clip: text;
@@ -87,7 +89,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.3;
+  line-height: 1.1;
   letter-spacing: 0.3px;
 }
 
@@ -138,6 +140,7 @@ body {
   
   .english-text {
     font-size: 2rem;
+    line-height: 1.1;
   }
 }
 
@@ -172,16 +175,17 @@ body {
   
   .star-icon {
     font-size: 2.5rem;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
   }
   
   .japanese-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 12px;
   }
   
   .english-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
   }
   
   .separator {
@@ -218,18 +222,18 @@ body {
   
   .star-icon {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   
   .japanese-text {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    line-height: 1.3;
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    line-height: 1.1;
   }
   
   .english-text {
-    font-size: 1.1rem;
-    line-height: 1.4;
+    font-size: 1.4rem;
+    line-height: 1.1;
   }
   
   .separator {

@@ -6,8 +6,8 @@ import './Main.css';
 const Main = () => { 
 const tilesData = [ 
 { 
-title: "Champions Trophy Predictor", 
-subtitle: "Fantasy Game", 
+title: "CT Predictor", 
+subtitle: "Cricket Fantasy Game", 
 date: "Feb 2025", 
 media: ["ctp1.jpg", "ctp2.jpg", "ctp3.jpg"], 
 link: "/projects/ChampionsTrophyPredictor" 
@@ -42,7 +42,7 @@ link: "/projects/fieldfinder"
 }, 
 { 
 title: "Dream Team", 
-subtitle: "Pakistan's First Fantasy Sports App (concept)", 
+subtitle: "Fantasy Sports App (concept)", 
 date: "June 2023", 
 media: ["DT1.png", "DT2.png"], 
 link: "/projects/dreamteam" 
@@ -56,7 +56,7 @@ link: "/projects/chronos-scheduler"
 }, 
 { 
 title: "Pantry App", 
-subtitle: "Inventory Management System and AI Recipe Suggestions", 
+subtitle: "AI Inventory Management", 
 date: "August 2024", 
 media: ["P4.png", "P3.png", "P2.png", "P1.png"], 
 link: "/projects/pantry-app" 

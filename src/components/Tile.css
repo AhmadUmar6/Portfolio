@@ -1,5 +1,8 @@
+/* Tile.css */
 body {
   font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  /* Assuming a white background for the page, otherwise you might want to set it here */
+  /* background-color: #fff; */
 }
 
 .tile-container {
@@ -8,14 +11,25 @@ body {
   max-width: 450px;
 }
 
-.tile {
+.tile-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ---- Retro Outline & Image Styling (Sharp, Black Border) ---- */
+.tile { /* Image container */
   position: relative;
-  border-radius: 12px;
-  overflow: hidden; /* Crucial for slide effect: hides the part of image outside the tile */
+  /* Sharp, thicker black border - top, left, right */
+  border: 1.5px solid #000; /* Thicker black border */
+  border-bottom: none; /* Bottom border will be handled by .tile-content */
+  border-radius: 0; /* No border radius for sharp corners */
+  overflow: hidden; /* Still good for ensuring content fits, even without radius */
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 100%; /* Original 1:1 Aspect Ratio */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Original shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9; /* Placeholder color for image loading */
 }
 
 .tile:hover {
@@ -30,30 +44,37 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* New animation: slide in from the right */
-  animation: slideInFromRight 0.7s ease-in-out; /* Duration and timing can be adjusted */
+  animation: slideInFromRight 0.7s ease-in-out;
 }
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Optional: start fully transparent */
+    transform: translateX(100%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0%);   /* End in the original position */
-    opacity: 1; /* End fully opaque */
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 
-.tile-content {
-  margin-top: 15px;
+/* ---- Content Styling with Retro Outline Continuation (Sharp, Black Border) ---- */
+.tile-content { /* Text content container */
+  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background-color: #fff; /* White background for content area */
+  /* Sharp, thicker black border - left, right, bottom */
+  border-left: 1.5px solid #000;
+  border-right: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  border-radius: 0; /* No border radius for sharp corners */
 }
 
 .tile-text {
   max-width: 70%;
+  flex-grow: 1;
 }
 
 .tile-title {
@@ -73,8 +94,11 @@ body {
   font-size: 12px;
   color: #86868B;
   text-align: right;
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
+/* ---- Responsiveness ---- */
 @media (max-width: 768px) {
   .tile-container {
     margin-bottom: 20px;
