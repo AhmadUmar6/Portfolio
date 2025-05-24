@@ -36,7 +36,12 @@ const CMTAdvocates = () => {
       <div className="content-section">
         <div className="stack">
           <h2>Stack</h2>
-          <p>React.js, Next.js (for optimal performance, SEO, and a professional structure), Material-UI (for a polished and comprehensive component library), and deployed on Vercel for continuous integration and robust hosting.</p>
+          <p>
+            React.js<br />
+            Next.js (for optimal performance, SEO, and a professional structure)<br />
+            Material-UI (for a polished and comprehensive component library)<br />
+            Vercel (for Deployment).
+          </p>
         </div>
       </div>
     </div>

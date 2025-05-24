@@ -36,7 +36,13 @@ const Eclat = () => {
       <div className="content-section">
         <div className="stack">
           <h2>Stack</h2>
-          <p>React.js and Next.js (for a fast, SEO-friendly, and interactive frontend), Node.js with Express.js (for a custom backend API), Supabase (for flexible product and user data storage), Stripe (for secure payment processing), and deployed on Vercel.</p>
+          <p>
+            React.js and Next.js (for a fast, SEO-friendly, and interactive frontend)<br />
+            Node.js with Express.js (for a custom backend API)<br />
+            Supabase (for flexible product and user data storage)<br />
+            Stripe (for secure payment processing)<br />
+            Vercel (for Deployment).
+          </p>
         </div>
       </div>
     </div>

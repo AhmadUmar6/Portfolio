@@ -1,122 +1,124 @@
 /* src/components/projects/SerenityNow.css */
 body {
-    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .serenitynow-container { /* Updated class name */
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .serenitynow-container .image-tile { /* Updated class name */
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .serenitynow-container .image-tile:hover { /* Updated class name */
-    transform: scale(1.02);
-  }
-  
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.serenitynow-container { /* Updated class name */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.serenitynow-container .image-tile { /* Updated class name */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  /* Updated to match tile.css border style */
+  border: 1.5px solid #000;
+  border-radius: 0; /* Sharp corners like in tile.css */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.serenitynow-container .image-tile:hover { /* Updated class name */
+  transform: scale(1.02);
+}
+
+.serenitynow-container .tile-image { /* Updated class name */
+  width: 100%;
+  height: auto;
+  display: block; /* Added to ensure border applies correctly if it's an img tag */
+  transition: opacity 1s ease-in-out;
+}
+
+.serenitynow-container .content-section { /* Updated class name */
+  margin-top: 20px;
+}
+
+.serenitynow-container h1 { /* Updated class name */
+  font-size: 1.5rem;
+  color: #1D1D1F;
+}
+
+.serenitynow-container h2 { /* Updated class name */
+  font-size: 1rem;
+  color: #A0A5AB;
+  margin-bottom: 10px;
+}
+
+.serenitynow-container p { /* Updated class name */
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.serenitynow-container ol { /* Updated class name */
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 20px;
+  margin-bottom: 4px;
+}
+
+.serenitynow-container .separator { /* Updated class name */
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+.serenitynow-container .stack { /* Updated class name */
+  text-align: left;
+}
+
+.serenitynow-container .stack p { /* Updated class name */
+  margin-top: 0;
+}
+
+.serenitynow-container > :last-child { /* Updated class name */
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
   .serenitynow-container .tile-image { /* Updated class name */
-    width: 100%;
-    height: auto;
-    transition: opacity 1s ease-in-out;
+    max-width: 100%;
   }
-  
-  .serenitynow-container .content-section { /* Updated class name */
-    margin-top: 20px;
-  }
-  
   .serenitynow-container h1 { /* Updated class name */
-    font-size: 1.5rem;
-    color: #1D1D1F;
+    font-size: 2.5rem;
   }
-  
   .serenitynow-container h2 { /* Updated class name */
-    font-size: 1rem;
-    color: #A0A5AB;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
   }
-  
-  .serenitynow-container p { /* Updated class name */
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
+  .serenitynow-container p, /* Updated class name */
   .serenitynow-container ol { /* Updated class name */
     font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    padding-left: 20px;
-    margin-bottom: 4px;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .serenitynow-container { /* Updated class name */
+    padding: 10px;
+  }
+  .serenitynow-container .tile-image { /* Updated class name */
+    max-width: 100%;
+  }
+  .serenitynow-container h1 { /* Updated class name */
+    font-size: 1.5rem;
+  }
+  .serenitynow-container h2 { /* Updated class name */
+    font-size: 1rem;
+  }
+  .serenitynow-container p, /* Updated class name */
+  .serenitynow-container ol { /* Updated class name */
+    font-size: 0.8rem;
+  }
   .serenitynow-container .separator { /* Updated class name */
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #ddd;
+    width: 90%;
   }
-  
-  .serenitynow-container .stack { /* Updated class name */
-    text-align: left;
-  }
-  
-  .serenitynow-container .stack p { /* Updated class name */
-    margin-top: 0;
-  }
-  
-  .serenitynow-container > :last-child { /* Updated class name */
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  
-  @media (max-width: 992px) {
-    .serenitynow-container .tile-image { /* Updated class name */
-      max-width: 100%;
-    }
-    .serenitynow-container h1 { /* Updated class name */
-      font-size: 2.5rem;
-    }
-    .serenitynow-container h2 { /* Updated class name */
-      font-size: 1.8rem;
-    }
-    .serenitynow-container p, /* Updated class name */
-    .serenitynow-container ol { /* Updated class name */
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .serenitynow-container { /* Updated class name */
-      padding: 10px;
-    }
-    .serenitynow-container .tile-image { /* Updated class name */
-      max-width: 100%;
-    }
-    .serenitynow-container h1 { /* Updated class name */
-      font-size: 1.5rem;
-    }
-    .serenitynow-container h2 { /* Updated class name */
-      font-size: 1rem;
-    }
-    .serenitynow-container p, /* Updated class name */
-    .serenitynow-container ol { /* Updated class name */
-      font-size: 0.8rem;
-    }
-    .serenitynow-container .separator { /* Updated class name */
-      width: 90%;
-    }
-  }
+}

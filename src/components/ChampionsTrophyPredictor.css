@@ -20,9 +20,10 @@ body {
   width: 100%;
   max-width: 450px;
   margin: 0 auto;
-  border-radius: 8px;
+  /* Updated to match tile.css border style */
+  border: 1.5px solid #000;
+  border-radius: 0; /* Sharp corners like in tile.css */
   overflow: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -46,6 +47,7 @@ body {
 .championstrophypredictor-container .tile-image {
   width: 100%;
   height: auto;
+  display: block; /* Added to ensure border applies correctly if it's an img tag */
   transition: opacity 1s ease-in-out;
 }
 
@@ -171,7 +173,7 @@ body {
   .championstrophypredictor-container .separator {
     width: 90%;
   }
-  
+
   .championstrophypredictor-container .try-it-label {
     position: static;
     opacity: 1;

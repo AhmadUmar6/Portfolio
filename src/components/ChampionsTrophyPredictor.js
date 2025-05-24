@@ -45,7 +45,12 @@ const ChampionsTrophyPredictor = () => {
       <div className="content-section">
         <div className="stack">
           <h2>Stack</h2>
-          <p>React.js, Next.js (for Server-Side Rendering and Static Site Generation), Supabase (for backend and database), Tailwind CSS (for modern and responsive UI), Vercel (for deployment).</p>
+          <p>
+            Next.js (for Server-Side Rendering and Static Site Generation)<br />
+            Supabase (for backend and database)<br />
+            Tailwind CSS (for modern and responsive UI)<br />
+            Vercel (for deployment)
+          </p>
         </div>
       </div>
     </div>
