@@ -73,18 +73,18 @@ color: #A0A5AB;
 /* Page indicator styles */
 .page-indicator {
 position: absolute;
-right: 8px;
+right: 2px;
 top: 50%;
 transform: translateY(-50%);
 font-size: 14px;
 color: #1D1D1F;
 font-weight: 300;
-opacity: 0.8;
+opacity: 0.9;
 transition: opacity 0.2s ease;
 }
 
 .current-page {
-font-weight: 600;
+font-weight: normal;
 }
 
 .current-page .page-indicator {
