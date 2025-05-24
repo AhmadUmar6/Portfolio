@@ -1,36 +1,51 @@
-body { 
-  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
-  } 
-  
-  .header-text { 
-  text-align: center; 
-  padding: 20px 0; 
-  } 
-  
-  .header-text sup { 
-  font-size: 1rem; 
-  position: relative; 
-  top: -0.9em; 
-  background: linear-gradient(100deg, #b6b6b6 .11%, #1D1D1F 1%); 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  background-clip: text; 
-  text-align: left; 
-  font-weight: 500; 
-  } 
-  
-  .header-text p { 
-  font-size: 1.5rem; 
-  margin: 0; 
-  background: linear-gradient(120deg, #9e9e9e 1%, #1D1D1F 20%); 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  background-clip: text; 
-  text-align: left; 
-  font-weight: 500; 
-  } 
-  
-  .japanese-card {
+body {
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.header-text {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-text sup {
+  font-size: 1rem;
+  position: relative;
+  top: -0.9em;
+  background: linear-gradient(100deg, #b6b6b6 .11%, #1D1D1F 1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+  font-weight: 500;
+}
+
+.header-text p {
+  font-size: 1.5rem;
+  margin: 0;
+  background: linear-gradient(120deg, #9e9e9e 1%, #1D1D1F 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+  font-weight: 500;
+}
+
+.header-text2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 30px 0;
+  background: linear-gradient(110deg, #9e9e9e 1%, #1D1D1F 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.japanese-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,9 +54,9 @@ body {
   padding: 30px;
   max-width: 600px;
   position: relative;
-  }
-  
-  .star-icon {
+}
+
+.star-icon {
   font-size: 4rem;
   margin-bottom: 15px;
   background: linear-gradient(110deg, #9e9e9e 1%, #1D1D1F 85%);
@@ -49,9 +64,9 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: bold;
-  }
-  
-  .japanese-text {
+}
+
+.japanese-text {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -62,9 +77,9 @@ body {
   background-clip: text;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  }
-  
-  .english-text {
+}
+
+.english-text {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
@@ -74,91 +89,151 @@ body {
   background-clip: text;
   line-height: 1.3;
   letter-spacing: 0.3px;
+}
+
+.separator {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 15px;
   }
   
-  .separator { 
-  width: 80%; 
-  margin: 20px auto; 
-  border: 1px solid #ddd; 
-  } 
+  .header-text {
+    padding: 15px 0;
+  }
   
-  @media (max-width: 768px) { 
-  .header-text { 
-  padding: 10px 0; 
-  } 
+  .header-text p {
+    font-size: 1.3rem;
+  }
   
-  .header-text sup { 
-  font-size: 0.8rem; 
-  top: -0.7em; 
-  } 
+  .header-text sup {
+    font-size: 0.9rem;
+    top: -0.8em;
+  }
   
-  .header-text p { 
-  font-size: 1.2rem; 
-  } 
+  .header-text2 {
+    font-size: 1.8rem;
+    margin: 25px 0;
+  }
   
   .japanese-card {
-  padding: 20px;
-  margin: 15px auto;
+    padding: 25px;
+    margin: 15px auto;
   }
   
   .star-icon {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+    font-size: 3rem;
+    margin-bottom: 12px;
   }
   
   .japanese-text {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
   }
   
   .english-text {
-  font-size: 1.4rem;
+    font-size: 2rem;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
   }
   
-  .separator { 
-  width: 90%; 
-  margin: 10px auto; 
-  } 
-  } 
+  .header-text {
+    padding: 10px 0;
+  }
   
-  @media (max-width: 576px) { 
-  .header-text { 
-  margin-top: 0px; 
-  padding-top: 10px; 
-  } 
+  .header-text sup {
+    font-size: 0.8rem;
+    top: -0.7em;
+  }
   
-  .header-text sup { 
-  font-size: 0.6rem; 
-  top: -0.6em; 
-  } 
+  .header-text p {
+    font-size: 1.2rem;
+  }
   
-  .header-text p { 
-  font-size: 0.8rem; 
-  } 
+  .header-text2 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+  }
   
   .japanese-card {
-  padding: 15px;
-  margin: 10px auto;
+    padding: 20px;
+    margin: 15px auto;
   }
   
   .star-icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
   }
   
   .japanese-text {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  line-height: 1.3;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
   }
   
   .english-text {
-  font-size: 1.1rem;
-  line-height: 1.4;
+    font-size: 1.4rem;
   }
   
-  .separator { 
-  width: 95%; 
-  margin: 5px auto; 
-  } 
+  .separator {
+    width: 90%;
+    margin: 10px auto;
   }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 576px) {
+  .header-text {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  
+  .header-text sup {
+    font-size: 0.6rem;
+    top: -0.6em;
+  }
+  
+  .header-text p {
+    font-size: 0.8rem;
+  }
+  
+  .header-text2 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+  }
+  
+  .japanese-card {
+    padding: 15px;
+    margin: 10px auto;
+  }
+  
+  .star-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .japanese-text {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  
+  .english-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .separator {
+    width: 95%;
+    margin: 5px auto;
+  }
+}
