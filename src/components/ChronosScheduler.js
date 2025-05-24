@@ -10,7 +10,6 @@ const ChronosScheduler = () => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000); // Change image every 3 seconds
-
     return () => clearInterval(interval);
   }, []);
 
@@ -21,7 +20,11 @@ const ChronosScheduler = () => {
       </div>
       <div className="content-section">
         <h1>
-          <a href="https://chronos-lums.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link"> Try Chronos App!</a>
+          <a href="https://chronos-lums.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link">
+            Chronos App
+            <span className="link-indicator">↗</span>
+            <span className="try-it-label">Try it live</span>
+          </a>
         </h1>
         <h2>Course Scheduler</h2>
         <p>
@@ -30,7 +33,7 @@ const ChronosScheduler = () => {
         </p>
         <p>
           The impact of Chronos was immediate and substantial. Within the first three days of its launch, the app garnered over 1,000 site visits from my university alone, demonstrating its value and filling a critical need in our academic community.
-          In the coming days I plan to implement a schedule sync functionality, allowing students to effortlessly add their course schedules to their device's calendar app with just one click. 
+          In the coming days I plan to implement a schedule sync functionality, allowing students to effortlessly add their course schedules to their device's calendar app with just one click.
         </p>
       </div>
       <hr className="separator" />
@@ -43,7 +46,11 @@ const ChronosScheduler = () => {
           <div className="github">
             <h2>Repository</h2>
             <p>
-              <a href="https://github.com/AhmadUmar6/chronosapp" target="_blank" rel="noopener noreferrer" className="github-link">Github Repository</a>
+              <a href="https://github.com/AhmadUmar6/chronosapp" target="_blank" rel="noopener noreferrer" className="github-link">
+                Github Repository
+                <span className="link-indicator">↗</span>
+                <span className="view-code-label">View code</span>
+              </a>
             </p>
           </div>
         </div>

@@ -27,8 +27,14 @@ body {
 .chronos-container .github-link, .chronos-container .chronos-link {
   color: #1D1D1F;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 
 .chronos-container .image-tile:hover {
@@ -83,6 +89,42 @@ body {
 
 .chronos-container .github-link:hover, .chronos-container .chronos-link:hover {
   color: #A0A5AB;
+  border-bottom-color: #1D1D1F;
+  transform: translateY(-1px);
+}
+
+.chronos-container .link-indicator {
+  font-size: 0.9em;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.chronos-container .chronos-link:hover .link-indicator,
+.chronos-container .github-link:hover .link-indicator {
+  transform: translate(2px, -2px);
+}
+
+.chronos-container .try-it-label,
+.chronos-container .view-code-label {
+  font-size: 0.75rem;
+  background: #1D1D1F;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  margin-left: 8px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  position: absolute;
+  white-space: nowrap;
+  top: -8px;
+}
+
+.chronos-container .chronos-link:hover .try-it-label,
+.chronos-container .github-link:hover .view-code-label {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media (max-width: 992px) {
@@ -118,5 +160,15 @@ body {
   }
   .chronos-container .separator {
     width: 90%;
+  }
+  
+  .chronos-container .try-it-label,
+  .chronos-container .view-code-label {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-left: 4px;
+    font-size: 0.65rem;
+    padding: 2px 6px;
   }
 }

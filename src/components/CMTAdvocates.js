@@ -11,7 +11,6 @@ const CMTAdvocates = () => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -22,7 +21,11 @@ const CMTAdvocates = () => {
       </div>
       <div className="content-section">
         <h1>
-          <a href="https://cmtadvocates.vercel.app" target="_blank" rel="noopener noreferrer" className="cmtadvocates-link"> Try CMT Advocates!</a>
+          <a href="https://cmtadvocates.com" target="_blank" rel="noopener noreferrer" className="cmtadvocates-link">
+            Try CMT Advocates!
+            <span className="link-indicator">↗</span>
+            <span className="try-it-label">Try it live</span>
+          </a>
         </h1>
         <h2>Law Firm Website</h2>
         <p>

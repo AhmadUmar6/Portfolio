@@ -1,4 +1,5 @@
 // src/components/projects/ChampionsTrophyPredictor.js
+
 import React, { useState, useEffect } from 'react';
 import './ChampionsTrophyPredictor.css'; // Ensure this CSS file exists and is correctly named
 
@@ -10,8 +11,7 @@ const ChampionsTrophyPredictor = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); 
-
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -22,14 +22,18 @@ const ChampionsTrophyPredictor = () => {
       </div>
       <div className="content-section">
         <h1>
-          <a href="https://ctpredictor.vercel.app" target="_blank" rel="noopener noreferrer" className="chronos-link"> Try CT Predictor!</a>
+          <a href="https://ctpredictor.vercel.app" target="_blank" rel="noopener noreferrer" className="ct-link">
+            Try CT Predictor!
+            <span className="link-indicator">↗</span>
+            <span className="try-it-label">Try it live</span>
+          </a>
         </h1>
         <h2>Fantasy Cricket Game</h2>
         <p>
           The Champions Trophy Predictor was born out of a personal passion for cricket and an admiration for fantasy sports platforms like the Fantasy Premier League (FPL). I noticed a gap in the market for a dedicated, engaging prediction game specifically tailored to major cricket tournaments. This project aimed to fill that void, offering cricket enthusiasts a unique way to test their knowledge and intuition.
         </p>
         <p>
-          The core concept allows users to make predictions for each match of a tournament, focusing on key outcomes such as the 'Man of the Match' and the 'Winning Team'. Correct predictions earn users points, which are tallied up to determine their standing on a leaderboard. 
+          The core concept allows users to make predictions for each match of a tournament, focusing on key outcomes such as the 'Man of the Match' and the 'Winning Team'. Correct predictions earn users points, which are tallied up to determine their standing on a leaderboard.
         </p>
         <ol>
           <li><strong>Match Predictions:</strong> Users predict the winner and standout player for upcoming matches.</li>
