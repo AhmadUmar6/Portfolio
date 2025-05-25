@@ -105,8 +105,8 @@ padding-left: 24px;
 
 /* Current page highlighting */
 .current-page {
-background-color: rgba(232, 232, 232, 0.3) !important;
-border-radius: 3px;
+background-color: rgba(232, 232, 232, 0.2) !important;
+border-radius: 0px;
 font-weight: normal;
 }
 
