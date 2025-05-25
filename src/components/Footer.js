@@ -1,11 +1,13 @@
 // src/components/Footer.js
+import SocialFooter from './SocialFooter';
 import './Footer.css';
 import React from 'react';
 
 const Footer = () => {
   return (
     <footer className="text-center mt-auto">
-      <p>Ahmad Umar &copy; 2024</p>
+      <SocialFooter />
+      <p>Ahmad Umar &copy; 2025</p>
     </footer>
   );
 };
