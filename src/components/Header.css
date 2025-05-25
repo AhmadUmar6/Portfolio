@@ -43,7 +43,7 @@ display: list-item;
 }
 
 .primary-text {
-color: black;
+color: #1D1D1F;
 padding: 8px;
 font-size: large;
 font-weight: 550;
@@ -59,7 +59,7 @@ display: block;
 padding: 6px 8px;
 font-size: medium;
 font-weight: 400;
-color: black;
+color: #1D1D1F;
 position: relative;
 }
 
@@ -81,7 +81,6 @@ flex-shrink: 0;
 color: black
 }
 
-/* Indentation with VS Code style lines */
 .indent-container {
 position: relative;
 }
