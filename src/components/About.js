@@ -40,7 +40,7 @@ const About = () => {
             <div className="date">May 25 - Present</div>
             <div className="content">
               <h3>BigUp</h3>
-              <p>Automation Engineer</p>
+              <p>Intern</p>
             </div>
           </div>
           <div className="timeline-item">
